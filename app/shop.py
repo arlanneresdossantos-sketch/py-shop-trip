@@ -46,14 +46,14 @@ class Shop:
         calculated = self.calculate_cart(products_cart)
         details = calculated["details"]
         for product, item in details.items():
-            total = item['total']
+            total = item["total"]
             if total == int(total):
                 total = int(total)
-            if item['quantity'] == 1:
+            if item["quantity"] == 1:
                 print(f"{item['quantity']} {product} for {total} dollars")
             else:
                 print(f"{item['quantity']} {product}s for {total} dollars")
-        total_cost = calculated['total_cost']
+        total_cost = calculated["total_cost"]
         if total_cost == int(total_cost):
             total_cost = int(total_cost)
         print(f"Total cost is {total_cost} dollars")
