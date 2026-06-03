@@ -55,7 +55,7 @@ def shop_trip() -> None:
             print()
             print(f"{customer.name} rides home")
             print(f"{customer.name} now "
-                  f"has {round(customer.money, 2)} dollars")
+                  f"has {customer.money:.2f} dollars")
             print()
         else:
             print(f"{customer.name} doesn't have "
