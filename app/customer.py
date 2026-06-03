@@ -33,5 +33,5 @@ class Customer:
     def return_home(self) -> None:
         self.location = self.home_location
 
-    def spend_money(self, amount_of_money: int) -> None:
+    def spend_money(self, amount_of_money: float) -> None:
         self.money -= amount_of_money
