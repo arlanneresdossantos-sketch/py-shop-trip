@@ -54,5 +54,5 @@ class Shop:
             else:
                 print(f"{item['quantity']} {product}s for {total} dollars")
 
-        print(f"Total cost is {calculated['total_cost']} dollars")
+        print(f"Total cost is {calculated['total_cost']:.2f} dollars")
         print("See you again!")
