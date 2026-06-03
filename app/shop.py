@@ -49,6 +49,10 @@ class Shop:
             total = item["total"]
             if total == int(total):
                 total = int(total)
-            print(f"{item['quantity']} {product}s for {total} dollars")
+            if item['quantity'] == 1:
+                print(f"{item['quantity']} {product} for {total} dollars")
+            else:
+                print(f"{item['quantity']} {product}s for {total} dollars")
+
         print(f"Total cost is {calculated['total_cost']} dollars")
         print("See you again!")
