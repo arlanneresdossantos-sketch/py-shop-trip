@@ -41,7 +41,7 @@ def shop_trip() -> None:
 
             shops_cost[shop] = total_cost
             print(f"{customer.name}'s trip to "
-                  f"the {shop.name} costs {round(total_cost, 2)}")
+                  f"the {shop.name} costs {total_cost:.2}")
         cheapest_shop = min(shops_cost, key=shops_cost.get)
         cost = shops_cost[cheapest_shop]
 
